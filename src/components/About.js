@@ -10,7 +10,7 @@ const About = () => {
         <div className="logo" style={{color:'black'}}>
         Chay
         </div>
-        <ParticleComponent/>
+        <ParticleComponent theme="light"/>
 
         <div className="centerboxs">
             <span>

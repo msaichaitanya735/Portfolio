@@ -100,36 +100,51 @@
 
 .projects{
     position: absolute;
-    color: white;
     top:50%;
-    font-size: 1.5rem;
     transform: rotate(-90deg);
     cursor: pointer;
+}
+.projects a{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 .about{
     position: absolute;
     color: white;
     top:92%;
     left:25%;
-    font-size: 1.5rem;
     cursor: pointer;
+}
+.about a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 .myskills{
     position: absolute;
-    color: black;
     top:92%;
     right:25%;
     font-size: 1.5rem;
     cursor: pointer;
 }
+.myskills a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
 .contact{
     position: absolute;
-    color: black;
     top:50%;
     right: 0%;
     font-size: 1.5rem;
     transform: rotate(90deg);
     cursor: pointer;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
 }
 @media(max-width:768px) {
     .container{
@@ -149,18 +164,18 @@
         top: -35%;
         width: 300px;
     }
-    .projects{
+    .projects a{
         -webkit-text-stroke: 1px black;
     }
-    .about{
+    .about a{
         -webkit-text-stroke: 1px black; 
     }
-    .myskills{
+    .myskills a{
         -webkit-text-stroke: 1px black;
         color: white;
         
     }
-    .contact{
+    .contact a{
         -webkit-text-stroke: 1px black;
         color:white;
     }
