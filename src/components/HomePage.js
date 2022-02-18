@@ -1,6 +1,7 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import './Homepage.css'
-import me from '../images/chay2.png'
+import me from '../images/me/chay2.png'
 
 const HomePage=()=> {
   return (
@@ -11,7 +12,7 @@ const HomePage=()=> {
       <div className="projects">
         Projects
       </div>
-      <div className="about">
+      <div className="about" >
         About
       </div>
       <div className="myskills">
