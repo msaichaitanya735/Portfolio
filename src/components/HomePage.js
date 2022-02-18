@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import {Link} from 'react-router-dom';
 import './Homepage.css'
 import me from '../images/me/chay2.png'
 
@@ -38,7 +37,7 @@ const HomePage=({timeline, ease, easeio})=> {
       opacity: 0,
       x: '200'
     });
-    },[])
+    },[ ])
   return (
     <div className="container" ref ={el => container = el}>
       <div className="logo">
@@ -50,8 +49,8 @@ const HomePage=({timeline, ease, easeio})=> {
       <div className="about" >
         <a href='/about' ref ={el => about = el}>About</a>
       </div>
-      <div className="myskills">
-        <a href='/skills' ref ={el => skills = el} >My Skills</a>
+      <div className="myskills" >
+        <a href='/skills' ref ={el => skills = el}>My Skills</a>
       </div>
       <div className="contact">
         <a href='/contact' ref ={el => contact = el}>Contact</a>

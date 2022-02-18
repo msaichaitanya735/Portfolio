@@ -7,11 +7,11 @@ import ParticleComponent from './ParticleComponent'
 const About = () => {
   return (
     <div className="containers">
-        <div className="logo" style={{color:'black'}}>
-        Chay
-        </div>
+       
         <ParticleComponent theme="light"/>
-
+        <div className="logos">
+            <a href="/">Chay</a>
+        </div>
         <div className="centerboxs">
             <span>
                 I am a full-stack developer from Hyderabad, India.

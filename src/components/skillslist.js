@@ -1,4 +1,3 @@
-import React from 'react'
 import html         from '../images/icons/html5.svg';
 import css          from '../images/icons/css.svg';
 import react        from '../images/icons/react.svg';

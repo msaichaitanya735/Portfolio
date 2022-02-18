@@ -127,6 +127,7 @@
     right:25%;
     font-size: 1.5rem;
     cursor: pointer;
+    z-index: 2;
 }
 .myskills a{
     text-decoration: none;

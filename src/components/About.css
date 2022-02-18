@@ -79,3 +79,15 @@
         left:60%;
     }
 }
+.logos{
+    position: absolute;
+    top: 0;
+    font-family: 'Pacifico', cursive;
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+.logos a{
+    color: black;
+    cursor: pointer;
+    z-index: 2;
+}
