@@ -12,7 +12,7 @@
     padding:8%;
     color: #e7e4e4;
 }
-.projimgcontainer{
+.contactimgcontainer{
     position: absolute;
     top:20%;
     right: 35%;
@@ -45,7 +45,7 @@
     }
 }
 @media (max-width:450px){
-    .projimgcontainer{
+    .contactimgcontainer{
         top:50%;
         right:50%;
     }
