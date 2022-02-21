@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import { gsap, Power3 } from "gsap";
 import ProjectsPage from './components/ProjectsPage';
 import Contact from './components/Contact';
+import EachProject from './components/EachProject';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/skills' element={<Skills/>}/>
           <Route path="/projects" element={<ProjectsPage/>}/>
           <Route path="/contact" element={<Contact/>}/> 
+          <Route path="/project/:id" element={<EachProject/>}/>
         </Routes>
       </div>
     </Router>

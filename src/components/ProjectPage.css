@@ -19,9 +19,7 @@
 .listcontainer{
     padding: 10%;
     display: flex;
-    flex-wrap: wrap;
-    
-    
+    flex-wrap: wrap;  
 }
 .projectitem{
     margin: 2rem;
@@ -30,7 +28,7 @@
     color: rgba(256,256,256,.5);
     font-size: 1.2rem;
 }
-.projectinto{
+.projectinto a{
     display: flex;
     color: white;
     width: 450px;
@@ -65,7 +63,7 @@
         top:10%;
         right:40%;
     }
-    .projectinto{
+    .projectinto a{
         width: 100%;
     }
     .projecttype{

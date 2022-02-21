@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './ProjectPage.css';
 import me from "../images/me/projectimg.svg";
 import arrow from "../images/me/arrow.svg";
@@ -18,10 +19,12 @@ const ProjectsPage = () => {
             return(
                 <div className="projectitem">
                     <div className="projecttype">{pro.type}</div>
-                    <div className="projectinto"><h1>{pro.title}</h1><img className='arrow' src={arrow}/></div>
+                    <div className="projectinto" ><a href={`/project/${i}`}><h1>{pro.title}</h1><img className='arrow' src={arrow}/></a></div>
                 </div>
+
             )
         })}
+
         </div>
       
     </div>

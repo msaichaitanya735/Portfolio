@@ -9,7 +9,7 @@
     font-size:7rem;
     font-weight: 900;
     -webkit-text-stroke: 2px black;
-    padding:8%;
+    padding:8% 8% 4% 8%;
     color: #e7e4e4;
 }
 .contactimgcontainer{
@@ -31,22 +31,69 @@
     color: rgba(256,256,256,.5);
     font-size: 1.2rem;
 }
+.discuss{
+    font-size: 4rem;
+    font-weight: 900;
+    margin-left: 10%;
+}
+.links{
+    font-size: 3rem;
+    margin: 2rem 0 0 15%;
+}
 
-@media (max-width:800px){
-    .work{
-        font-size: 5rem;
+@media (max-width:1010px){
+
+    .contacts{
+        font-size: 6rem;
     }
 }
-@media (max-width:570px){
+@media (max-width:800px){
     .contacts{
-        font-size: 3.7rem;
+        font-size: 5.5rem;
         padding-top: 25%;
-        padding:30% 0 8% 2%;
+        padding:30% 0 8% 1%;
+    }
+    .discuss{
+        font-size: 3.7rem;
+    }
+    .links{
+        font-size: 2.5rem;
+        margin: 2rem 0 0 15%;
+    }
+}
+@media (max-width:612px){
+    .contacts{
+        font-size: 4rem;
+        font-weight: 900;
+    }
+    .discuss{
+        font-size: 3rem;
+    }
+    .link{
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
     }
 }
 @media (max-width:450px){
     .contactimgcontainer{
         top:50%;
         right:50%;
+    }
+    .contacts{
+        font-size: 4rem;
+        font-weight: 900;
+    }
+    .links{
+        font-size: 2rem;
+    }
+    .link{
+        margin-bottom: 1.5rem;
+    }
+
+}
+@media (max-width:399px){
+    .contacts{
+        font-size: 3.2rem;
+        padding:30% 0 8% 0%;
     }
 }
