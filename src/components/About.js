@@ -1,7 +1,6 @@
 import React from 'react'
 import './About.css'
 import me from '../images/me/chay5.png'
-// import Particles from "react-tsparticles";
 import ParticleComponent from './ParticleComponent'
 
 const About = () => {
