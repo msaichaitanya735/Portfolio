@@ -1,0 +1,132 @@
+/* Work Experience Section */
+.experience-container {
+    background: black;
+    text-align: center;
+    padding: 5vw 10vw;
+}
+
+/* Title */
+.experience-title h1 span {
+    -webkit-text-stroke: 1px #CB5CFC; /* Outline effect */
+    color: transparent;
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+.experience-title h1 {
+    font-size: 7rem;
+    font-weight: 900;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.experience-title p {
+    font-size: 1.5rem;
+    color: #ccc;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* Work Experience Items */
+.experience-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.experience-item.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Text Section */
+.experience-text {
+    width: 45%;
+    text-align: left;
+}
+
+.experience-text h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.experience-text p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* Button */
+.exp-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #CB5CFC;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.exp-btn:hover {
+    background: #9a40cc;
+}
+
+/* Image Section */
+.experience-imgCard {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.experience-imgHolder{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 20%;
+}
+
+.cs{
+    width: 400px;
+    height: 225px;
+}
+
+.experience-imgHolder img {
+    width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.experience-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .experience-item {
+        flex-direction: column;
+    }
+
+    .experience-item.reverse {
+        flex-direction: column;
+    }
+
+    .experience-text, .experience-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .experience-text p {
+        font-size: 1rem;
+    }
+
+    .exp-btn {
+        width: 100%;
+    }
+}

@@ -7,14 +7,13 @@ import { projects } from './Projectlist';
 const ProjectsPage = () => {
   return (
     <div className="projectcontainer">
-        <div className="logo"><a href="/">Chay</a></div>
         <div className="work">&#60;WORK /&#62;</div>
         <div className="projimgcontainer">
-                <div className="img">
+                <div className="project-img">
                     <img src={me} alt="chaitanya"/>
                 </div>            
         </div>
-        <div className="listcontainer">
+        <div className="projectpage-listcontainer">
         {projects.map((pro,i)=>{
             return(
                 <div className="projectitem">

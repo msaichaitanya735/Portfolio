@@ -2,8 +2,7 @@
     background: black;
     position: relative;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: max-content;
 }
 .work{
     font-size:7rem;
@@ -16,7 +15,7 @@
     top:20%;
     right: 35%;
 }
-.listcontainer{
+.projectpage-listcontainer{
     padding: 10%;
     display: flex;
     flex-wrap: wrap;  
@@ -37,6 +36,12 @@
     align-items: center;
     padding-bottom: 2%;
     cursor: pointer;
+}
+.project-img{
+    width: 400px;
+    position: absolute;
+    top:-6rem;
+    left: -10%;
 }
 .projectinto h1{
     font-weight: 300;

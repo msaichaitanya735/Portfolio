@@ -1,74 +1,48 @@
-import React, { useEffect, useRef } from 'react'
-import './Homepage.css'
-import me from '../images/me/chay2.png'
+import React from "react";
+import NavBar from "./NavBar";
+import "./Homepage.css";
+import Button from "@mui/material/Button";
+import DownloadIcon from "@mui/icons-material/Download";
+import SendIcon from "@mui/icons-material/Send";
+import LanguageIcon from "@mui/icons-material/Language";
+import heroImg from "../images/me/hero-img.jpg";
+import ProjectsPage from "./ProjectsPage";
+import AboutMe from "./AboutMe";
+import WorkExperience from "./WorkExperince";
+import Education from "./Education";
 
-const HomePage=({timeline, ease, easeio})=> {
-  let fireimg = useRef(null)
-  let first = useRef(null)
-  let sec = useRef(null)
-  let third = useRef(null)
-  let border =useRef(null)
-  let about = useRef(null)
-  let project = useRef(null)
-  let skills = useRef(null)
-  let contact = useRef(null)
-  let container =useRef(null)
-  useEffect(() => {
-    timeline.from([ container, border ], 1 ,{
-    opacity: 0,
-    x: "30%",
-    width: "0%",
-    })
-    timeline.from([ about, project, skills, contact], .6 ,{
-    opacity: 0,
-    })
-    // timeline.from([ border], .7 ,{
-    // opacity: 0,
-    // width: "0%",
-    // })  
-    timeline.from([ first, sec, third], .7 ,{
-    opacity: 0,
-    x: "-20%",
-    stagger: {
-        amount: .9
-    },
-    })
-    timeline.from([fireimg], .9, {
-      opacity: 0,
-      x: '200'
-    });
-    },[ ])
+function HomePage() {
   return (
-    <div className="container" ref ={el => container = el}>
-      <div className="logo">
-        Chay
-      </div>
-      <div className="projects" >
-        <a href='/projects' ref ={el => project = el}>Projects</a>
-      </div>
-      <div className="about" >
-        <a href='/about' ref ={el => about = el}>About</a>
-      </div>
-      <div className="myskills" >
-        <a href='/skills' ref ={el => skills = el}>My Skills</a>
-      </div>
-      <div className="contact">
-        <a href='/contact' ref ={el => contact = el}>Contact</a>
-      </div>
-      <div className="centerbox" ref ={el => border = el}>
-        <div className="info">
-          <span className='hi' ref ={el => first = el}>Hi, </span>
-          <span className='chaitanya' ref ={el => sec = el}>I'm Chaitanya</span>
-          <span className='details' ref ={el => third = el}>I am a Frontend Developer. I code and design web pages.</span>
-        </div> 
-        <div className="imgcontainer">
-          <div className="img" ref ={el => fireimg = el}>
-            <img src={me} alt="Chaitanya" />
-          </div> 
+    <div className="hero-Example">
+      <NavBar />
+      <div className="homepage-container">
+        <div className="homepage-container-left">
+          <div className="text-container">SAICHAITANYA MUTHYALA</div>
+          <p className="paragraph-container">
+            A highly skilled Full-Stack Developer with expertise in React, Node.js, Spring Boot, and AI-driven automation, pursuing an MS in Computer Science (GPA 4.0), with strong problem-solving skills, cloud experience (AWS/GCP), and a passion for building scalable web applications.
+          </p>
+          <div className="button-container">
+            <Button variant="contained" color="success">
+              <span>Resume <DownloadIcon /></span>
+            </Button>
+            <Button variant="contained" color="success">
+              <span>Hire Me <SendIcon /></span>
+            </Button>
+            <Button variant="contained" color="success">
+              <span>Explore Me <LanguageIcon /></span>
+            </Button>
+          </div>
+        </div>
+        <div className="homepage-container-right">
+          <img src={heroImg} alt="Chaitanya" />
         </div>
       </div>
+      <AboutMe />
+      <Education/>
+      <WorkExperience/>
+      <ProjectsPage />
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
