@@ -10,42 +10,33 @@ import expressjs    from '../images/icons/expressjs.svg';
 import git          from '../images/icons/github.svg';
 import getbootstrap from '../images/icons/getbootstrap.svg';
 import netlify      from '../images/icons/netlify.svg';
+import python from '../images/icons/python.png';
+import java from '../images/icons/Java.png';
+import springBoot from '../images/icons/Spring.png';
+import aws from '../images/icons/Amazon.png';
+import tailwind from '../images/icons/TailwindCss.png';
+import docker from '../images/icons/Docker.png';
+import kubernetes from '../images/icons/Kubernetes.png';
 
- export const skill=[
-{name:"html"        ,
-    image:html        
-},
-{name:"css"         ,
-    image:css         
-},
-{name:"react"       ,
-    image:react       
-},
-{name:"sass"        ,
-    image:sass        
-},
-{name:"javascript"  ,
-    image:javascript  
-},
-{name:"nodejs"      ,
-    image:nodejs      
-},
-{name:"redux"       ,
-    image:redux       
-},
-{name:"mongodb"     ,
-    image:mongodb     
-},
-{name:"expressjs"   ,
-    image:expressjs   
-},
-{name:"git"         ,
-    image:git         
-},
-{name:"bootstrap",
-    image:getbootstrap
-},
-{name:"netlify"     ,
-    image:netlify     
-}
-]
+
+export const skill = [
+    { name: "AWS", image: aws },
+    { name: "Bootstrap", image: getbootstrap },
+    { name: "CSS", image: css },
+    { name: "Docker", image: docker },
+    { name: "ExpressJS", image: expressjs },
+    { name: "Git", image: git },
+    { name: "HTML", image: html },
+    { name: "Java", image: java },
+    { name: "JavaScript", image: javascript },
+    { name: "Kubernetes", image: kubernetes },
+    { name: "MongoDB", image: mongodb },
+    { name: "NodeJS", image: nodejs },
+    { name: "Python", image: python },
+    { name: "React", image: react },
+    { name: "Redux", image: redux },
+    { name: "Sass", image: sass },
+    { name: "Spring Boot", image: springBoot },
+    { name: "Tailwind CSS", image: tailwind }
+  ];
+  

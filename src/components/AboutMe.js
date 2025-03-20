@@ -8,7 +8,7 @@ import "./AboutMe.css";
 
 function AboutMe() {
   return (
-    <div className="about-container">
+    <section className="about-container" id="about">
       {/* Title Section */}
       <div className="about-title">
         <h1>ABOUT <span>ME</span> </h1>
@@ -20,7 +20,7 @@ function AboutMe() {
       <div className="about-description">
         <h2>Passionate and dedicated full-stack developer</h2>
         <p>
-          With expertise in **React, Node.js, and Spring Boot**, I create
+          With expertise in <span> React, Node.js, and Spring Boot</span>, I create
           seamless and high-performance applications. My focus is on building
           scalable solutions and enhancing user experiences.
         </p>
@@ -44,7 +44,7 @@ function AboutMe() {
           <p>Building robust applications with scalability in mind.</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

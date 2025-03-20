@@ -89,7 +89,7 @@
 
 /* MAKE SURE TEXT STAYS ON TOP */
 .button-container Button span {
-    position: relative;
+    /* position: relative; */
     z-index: 1;
 }
 

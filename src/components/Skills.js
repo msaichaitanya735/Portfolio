@@ -5,10 +5,9 @@ import {skill} from './skillslist.js'
 
 const Skills = () => {
   return (
-    <div className="skillscontainer">
+    <section className="skillscontainer" id="skills">
         <Particles theme="dark"/>
-        {/* <div className="techstack">TechStack</div> */}
-        <div className="logo"><a href="/">Chay</a></div>
+        <div className="techstack">TechStack/</div>
         <div className="skillscenterbox">
             {
               skill.map((skill,i)=>{
@@ -21,7 +20,7 @@ const Skills = () => {
               })
             }
         </div>
-    </div>
+    </section>
   )
 }
 

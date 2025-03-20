@@ -113,3 +113,9 @@
     }
 }
 
+@media (max-width:780px) {
+    .education-imgCard{
+        margin-top: 20px;
+    }
+}
+

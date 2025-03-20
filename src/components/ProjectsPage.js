@@ -6,8 +6,8 @@ import arrow from "../images/me/arrow.svg";
 import { projects } from './Projectlist';
 const ProjectsPage = () => {
   return (
-    <div className="projectcontainer">
-        <div className="work">&#60;WORK /&#62;</div>
+    <section className="projectcontainer" id="projects">
+        <div className="work">&#60;Projects /&#62;</div>
         <div className="projimgcontainer">
                 <div className="project-img">
                     <img src={me} alt="chaitanya"/>
@@ -26,7 +26,7 @@ const ProjectsPage = () => {
 
         </div>
       
-    </div>
+    </section>
   )
 }
 

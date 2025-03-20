@@ -34,7 +34,7 @@ function Education() {
           <img src={VBITLogo} alt="Bachelor's Degree" />
         </div> */}
         <div className="education-text">
-          <h2>Bachelor's in Electronics & CS</h2>
+          <h2>Bachelor's in Computer Science</h2>
           <p>Jawaharlal Nehru Technological University | 2017 - 2021</p>
           <p>Gained strong foundations in **Data Structures, OOPS, and Web Technologies**.</p>
         </div>
