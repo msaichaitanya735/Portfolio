@@ -7,7 +7,7 @@ import { projects } from './Projectlist';
 const ProjectsPage = () => {
   return (
     <section className="projectcontainer" id="projects">
-        <div className="work">&#60;Projects /&#62;</div>
+        <div className="work">Projects </div>
         <div className="projimgcontainer">
                 <div className="project-img">
                     <img src={me} alt="chaitanya"/>

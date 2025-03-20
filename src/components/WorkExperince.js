@@ -1,7 +1,7 @@
 import React from "react";
 import "./WorkExperience.css";
 import cognizant from "../images/me/Cognizant-Logo.jpg"; // Replace with actual image paths
-import codingstudio from "../images/me/codingStudio.jpeg";
+import codingstudio from "../images/me/codingStudios.jpg";
 
 
 function WorkExperience() {
@@ -33,7 +33,7 @@ function WorkExperience() {
         </div>
       </div>
 
-      <div className="experience-item reverse">
+      <div className="experience-item">
       <div className="experience-imgCard">
       <div className="experience-imgHolder">
           <img src={cognizant} alt="Cloud Development" />

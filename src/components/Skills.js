@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <section className="skillscontainer" id="skills">
         <Particles theme="dark"/>
-        <div className="techstack">TechStack/</div>
+        <div className="techstack">TechStack</div>
         <div className="skillscenterbox">
             {
               skill.map((skill,i)=>{
