@@ -35,8 +35,8 @@ function AboutMe() {
         </div>
         <div className="feature-box">
           <span className="feature-icon">🌎</span>
-          <h3>Full-Stack Development</h3>
-          <p>Expertise in both frontend and backend technologies.</p>
+          <h3>AI & Full-Stack Development</h3>
+          <p>Expertise in both AI, automation , frontend and backend technologies.</p>
         </div>
         <div className="feature-box">
           <span className="feature-icon">🚀</span>
