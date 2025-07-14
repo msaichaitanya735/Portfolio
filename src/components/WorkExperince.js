@@ -2,6 +2,7 @@ import React from "react";
 import "./WorkExperience.css";
 import cognizant from "../images/me/Cognizant-Logo.jpg"; // Replace with actual image paths
 import codingstudio from "../images/me/codingStudios.jpg";
+import haptag from "../images/me/haptag_logo.png";
 
 
 function WorkExperience() {
@@ -10,10 +11,29 @@ function WorkExperience() {
       {/* Title Section */}
       <div className="experience-title">
         <h1>Professional <span>EXPERIENCE</span></h1>
-        <p>Bringing expertise in full-stack development, cloud computing, and AI-driven solutions.</p>
+        <p>Bringing expertise in AI, automation, and full-stack development.</p>
       </div>
 
       {/* Experience Section */}
+      <div className="experience-item">
+        <div className="experience-text">
+          <h2>AI Data Analyst</h2>
+          <p><strong>Haptag</strong> | July 2025 - Present</p>
+          <p>
+            <ul>
+              <li>Building and designing applications with a focus on AI and prompt engineering.</li>
+              <li>Developing AI models (including GPT-4o and Gemini) for anomaly detection in cybersecurity.</li>
+              <li>Researching and implementing the latest AI tools and technologies to enhance Haptag's offerings.</li>
+            </ul>
+          </p>
+        </div>
+        <div className="experience-imgCard">
+            <div className="experience-imgHolder">
+                <img src={haptag} alt="Haptag" />
+            </div>
+        </div>
+      </div>
+
       <div className="experience-item">
         <div className="experience-text">
           <h2>Programmer Analyst</h2>

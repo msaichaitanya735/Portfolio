@@ -20,9 +20,9 @@ function AboutMe() {
       <div className="about-description">
         <h2>Passionate and dedicated full-stack developer</h2>
         <p>
-          With expertise in <span> React, Node.js, and Spring Boot</span>, I create
+                   With expertise in <span> React, Node.js, Spring Boot, and AI technologies like GPT and Gemini</span>, I create
           seamless and high-performance applications. My focus is on building
-          scalable solutions and enhancing user experiences.
+          scalable solutions, automating complex processes, and enhancing user experiences.
         </p>
       </div>
 

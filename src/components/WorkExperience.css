@@ -105,6 +105,7 @@
     width: 400px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
+    
 }
 
 .experience-img img:hover {

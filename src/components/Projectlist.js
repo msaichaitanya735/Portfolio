@@ -22,6 +22,11 @@ import prf3 from '../images/project/portfolio/3.png';
 import prf4 from '../images/project/portfolio/4.png';
 import prf5 from '../images/project/portfolio/5.png';
 import prf6 from '../images/project/portfolio/6.png';
+import ra1 from '../images/project/resumeautomation/resumebuilder.png';
+import ra2 from '../images/project/resumeautomation/coverbuilder.png';
+import ra3 from '../images/project/resumeautomation/docker.png';
+import ra4 from '../images/project/resumeautomation/google-apps-script.png';
+import ra5 from '../images/project/resumeautomation/Sheet.png';
 
 export const projects = [
     {
@@ -67,5 +72,14 @@ export const projects = [
         sourcecode: "https://github.com/msaichaitanya735/Portfolio",
         tech: ['html','css','react','redux','nodejs','mongodb','expressjs','github','netlify'],
         screenshot: [prf1,prf2,prf3,prf4,prf5,prf6]
-    }
+    },
+        {
+        title : "AI-RA",
+        desc: "An AI-powered Resume Automation and Job Tracker built to simplify and optimize the job application process. It accepts a job description, extracts keywords using GPT-4, generates a LaTeX-based ATS-optimized resume and tailored cover letter, and tracks application status.",
+        type: "AI Automation",
+        sourcecode: "https://lnkd.in/g8yZWR2H",
+        tech: ['Google Sheets', 'Apps Script', 'n8n', 'Docker', 'OpenAI', 'Regex', 'LaTeX', 'Overleaf'],
+        screenshot: [ra1,ra2,ra3,ra4,ra5] // Replace with actual screenshot variable names or URLs
+    },
+    
 ]
