@@ -32,7 +32,7 @@ function HomePage() {
         <div className="homepage-container-left">
           <div className="text-container">SAICHAITANYA MUTHYALA</div>
           <p className="paragraph-container">
-            A highly skilled AI, Automation, and Web Developer with expertise in React, Node.js, Spring Boot, and AI-driven automation, pursuing an MS in Computer Science (GPA 3.6). I have a passion for building scalable web applications and leveraging AI to solve complex problems, with experience in cloud technologies like AWS.
+            A highly skilled AI, Automation, and Web Developer with expertise in LLMs, React, Node.js, Spring Boot, and AI-driven automation, pursuing an MS in Computer Science (GPA 3.6). I have a passion for building scalable web applications and leveraging AI to solve complex problems, with experience in cloud technologies like AWS.
           </p>
           <div className="button-container">
             <Button variant="contained" color="success" onClick={handleResumeDownload}>

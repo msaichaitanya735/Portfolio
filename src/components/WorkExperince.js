@@ -18,7 +18,7 @@ function WorkExperience() {
       <div className="experience-item">
         <div className="experience-text">
           <h2>AI Data Analyst</h2>
-          <p><strong>Haptag</strong> | July 2025 - Present</p>
+          <p><strong>Haptag</strong> | June 2025 - Present</p>
           <p>
             <ul>
               <li>Building and designing applications with a focus on AI and prompt engineering.</li>
