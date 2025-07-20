@@ -39,8 +39,9 @@ function WorkExperience() {
           <h2>Programmer Analyst</h2>
           <p>
             <ul>
-              <li>Optimized UI performance & rendering using React, Next.js, and TypeScript.</li>
-              <li>Developed scalable, reusable UI components, ensuring accessibility & responsiveness.</li>
+              <li>Leveraged Large Language Models (LLMs) to build intelligent automation solutions.</li>
+              <li>Engineered and fine-tuned prompts for AI models to ensure optimal performance and accuracy.</li>
+              <li>Contributed to the development of AI-powered features within full-stack applications.</li>
               <li>Led Agile development, collaborating across teams for seamless execution.</li>
               <li>Architected high-availability cloud solutions, improving reliability & cost efficiency.</li>
             </ul>
