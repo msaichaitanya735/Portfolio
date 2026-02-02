@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# SaiChaitanya Muthyala — Portfolio
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Portfolio setup
+
+- **Contact form:** Create a form at [Formspree](https://formspree.io), copy your form endpoint (e.g. `https://formspree.io/f/xxxxxxxx`), and set `REACT_APP_FORMSPREE_URL` in a `.env` file (see `.env.example`). Without this, the form shows a message asking visitors to email you directly.
+- **Resume:** Place your PDF resume in the `public` folder as `resume.pdf`. The "Resume" button and nav link will then download it as `SaiChaitanya_Resume.pdf`.
 
 ## Available Scripts
 

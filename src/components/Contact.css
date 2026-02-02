@@ -74,6 +74,36 @@
     background: #9a40cc;
 }
 
+.contact-form button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.contact-form-feedback {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    margin-top: 4px;
+}
+
+.contact-form-feedback.success {
+    background: rgba(0, 200, 100, 0.2);
+    color: #a9ff5c;
+    border: 1px solid #a9ff5c;
+}
+
+.contact-form-feedback.error {
+    background: rgba(200, 50, 50, 0.2);
+    color: #ff6b6b;
+    border: 1px solid #ff6b6b;
+}
+
+.contact-form-feedback .contact-email-link {
+    color: #a9ff5c;
+    text-decoration: underline;
+}
+
 /* Social Icons */
 .contact-socials {
     display: flex;

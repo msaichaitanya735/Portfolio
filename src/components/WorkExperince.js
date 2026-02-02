@@ -17,13 +17,15 @@ function WorkExperience() {
       {/* Experience Section */}
       <div className="experience-item">
         <div className="experience-text">
-          <h2>AI Data Analyst</h2>
+          <h2>AI Engineer</h2>
           <p><strong>Haptag</strong> | June 2025 - Present</p>
           <p>
             <ul>
-              <li>Building and designing applications with a focus on AI and prompt engineering.</li>
-              <li>Developing AI models (including GPT-4o and Gemini) for anomaly detection in cybersecurity.</li>
-              <li>Researching and implementing the latest AI tools and technologies to enhance Haptag's offerings.</li>
+              <li>Built a multi-step LLM pipeline for cybersecurity log anomaly detection (Detector → Explainer → Reporter) with strict JSON schemas for downstream reliability.</li>
+              <li>Implemented real-time streaming inference (FastAPI StreamingResponse/SSE) + frontend EventSource viewer for live anomaly results.</li>
+              <li>Designed RAG retrieval with Postgres + pgvector to ground explanations and reduce hallucinations.</li>
+              <li>Added cost/latency optimizations: batching, token controls, semantic caching strategy.</li>
+              <li>Ran prompt evaluation/testing across GPT-4o + Gemini to compare quality/consistency and failure modes.</li>
             </ul>
           </p>
         </div>
@@ -37,6 +39,7 @@ function WorkExperience() {
       <div className="experience-item">
         <div className="experience-text">
           <h2>Programmer Analyst</h2>
+          <p><strong>Cognizant</strong> | Jul 2021 - Jun 2023</p>
           <p>
             <ul>
               <li>Leveraged Large Language Models (LLMs) to build intelligent automation solutions.</li>
@@ -49,7 +52,7 @@ function WorkExperience() {
         </div>
         <div className="experience-imgCard">
             <div className="experience-imgHolder">
-                <img src={cognizant} alt="Software Engineer Work" />
+                <img src={cognizant} alt="Cognizant" />
             </div>
         </div>
       </div>
@@ -57,16 +60,17 @@ function WorkExperience() {
       <div className="experience-item">
       <div className="experience-imgCard">
       <div className="experience-imgHolder">
-          <img src={cognizant} alt="Cloud Development" />
+          <img src={cognizant} alt="Cognizant" />
         </div>
         </div>
         <div className="experience-text">
-          <h2>Progammer Analyst Intern</h2>
+          <h2>Programmer Analyst Intern</h2>
+          <p><strong>Cognizant</strong> • Hyderabad, Telangana, India | Feb 2021 - May 2021</p>
           <p>
             <ul>
-            <li> Built a full-stack web app, leading a team of developers.</li>
-            <li> Implemented Agile workflows, enhancing productivity.</li>
-            <li> Developed React components & REST APIs for smooth user experience.</li>
+            <li>Built a full-stack web app, leading a team of developers.</li>
+            <li>Implemented Agile workflows, enhancing productivity.</li>
+            <li>Developed React components & REST APIs for smooth user experience.</li>
             </ul>
           </p>
         </div>
@@ -74,18 +78,19 @@ function WorkExperience() {
 
       <div className="experience-item">
         <div className="experience-text">
-          <h2>Software Development Engineer</h2>
+          <h2>Senior Software Development Engineer</h2>
+          <p><strong>codingStudio</strong> • Hyderabad, TG, India | Jan 2019 - Jan 2021</p>
           <p>
             <ul>
-            <li> Built and deployed real-time apps for thousands of users.</li>
-            <li> Organized coding competitions, growing developer engagement.</li>
-            <li> Optimized server throughput & app scalability for peak performance.</li>
+            <li>Built and deployed real-time apps for thousands of users.</li>
+            <li>Organized coding competitions, growing developer engagement.</li>
+            <li>Optimized server throughput & app scalability for peak performance.</li>
             </ul>
           </p>
         </div>
         <div className="experience-imgCard">
             <div className="experience-imgHolder">          
-                <img src={codingstudio} alt="AI & Automation" />
+                <img src={codingstudio} alt="codingStudio" />
         </div>
         </div>
       </div>

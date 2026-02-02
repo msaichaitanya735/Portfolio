@@ -4,19 +4,48 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 
+const FORMSPREE_URL = process.env.REACT_APP_FORMSPREE_URL || "https://formspree.io/f/mjgopgdg";
+
 function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [status, setStatus] = useState(""); // "" | "sending" | "success" | "error"
+  const [errorMessage, setErrorMessage] = useState("");
 
-  // Handle Form Input Changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    setStatus("");
   };
 
-  // Handle Form Submission (Can be linked to Backend/API)
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Message sent successfully!");
-    setFormData({ name: "", email: "", message: "" });
+    if (!FORMSPREE_URL) {
+      setStatus("error");
+      setErrorMessage("Form is not configured. Please email me directly at saichaitanyamuthyalas@gmail.com.");
+      return;
+    }
+    setStatus("sending");
+    setErrorMessage("");
+    try {
+      const res = await fetch(FORMSPREE_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+      if (res.ok) {
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus("error");
+        setErrorMessage("Something went wrong. Please try again or email me directly.");
+      }
+    } catch (err) {
+      setStatus("error");
+      setErrorMessage("Network error. Please try again or email me at saichaitanyamuthyalas@gmail.com");
+    }
   };
 
   return (
@@ -37,6 +66,7 @@ function Contact() {
             required
             value={formData.name}
             onChange={handleChange}
+            disabled={status === "sending"}
           />
           <input
             type="email"
@@ -45,6 +75,7 @@ function Contact() {
             required
             value={formData.email}
             onChange={handleChange}
+            disabled={status === "sending"}
           />
           <textarea
             name="message"
@@ -53,8 +84,20 @@ function Contact() {
             rows="4"
             value={formData.message}
             onChange={handleChange}
+            disabled={status === "sending"}
           />
-          <button type="submit">Send Message</button>
+          <button type="submit" disabled={status === "sending"}>
+            {status === "sending" ? "Sending…" : "Send Message"}
+          </button>
+          {status === "success" && (
+            <p className="contact-form-feedback success">Thanks! Your message was sent. I'll get back to you soon.</p>
+          )}
+          {status === "error" && (
+            <p className="contact-form-feedback error">
+              {errorMessage}{" "}
+              <a href="mailto:saichaitanyamuthyalas@gmail.com" className="contact-email-link">Email me</a>
+            </p>
+          )}
         </form>
 
         {/* Social Links */}

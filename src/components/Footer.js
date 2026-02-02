@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 
+const OPEN_TO_OPPORTUNITIES_TEXT = "Seeking W-2 AI Engineer / Full-Stack AI Engineer / LLM Specialist roles (H-1B sponsorship; currently on F-1 OPT).";
+
 function Footer() {
+  const [showOpportunitiesDetail, setShowOpportunitiesDetail] = useState(false);
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -12,6 +16,21 @@ function Footer() {
         <div className="footer-brand">
           <h2>SaiChaitanya Muthyala</h2>
           <p>Building Scalable & Intelligent Solutions</p>
+          <div className="footer-open-badge-wrap">
+            <span
+              className="footer-open-badge"
+              onClick={() => setShowOpportunitiesDetail(!showOpportunitiesDetail)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => e.key === "Enter" && setShowOpportunitiesDetail(!showOpportunitiesDetail)}
+              aria-expanded={showOpportunitiesDetail}
+            >
+              Open to opportunities
+            </span>
+            {showOpportunitiesDetail && (
+              <p className="footer-opportunities-detail">{OPEN_TO_OPPORTUNITIES_TEXT}</p>
+            )}
+          </div>
         </div>
 
         {/* Navigation Links */}

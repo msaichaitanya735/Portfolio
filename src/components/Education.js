@@ -17,7 +17,7 @@ function Education() {
         <div className="education-text">
           <h2>Master's in Computer Science</h2>
           <p>University of Central Missouri | 2023 - 2025</p>
-          <p>Specializing in **Full-Stack Development, Cloud Computing, and AI**.</p>
+          <p>Specializing in <strong>Full-Stack Development, Cloud Computing, and AI</strong>.</p>
         </div>
         {/* <div className="education-img">
         <img src={UCMLogo} alt="Master's Degree"/>
@@ -36,7 +36,7 @@ function Education() {
         <div className="education-text">
           <h2>Bachelor's in Computer Science</h2>
           <p>Jawaharlal Nehru Technological University | 2017 - 2021</p>
-          <p>Gained strong foundations in **Data Structures, OOPS, and Web Technologies**.</p>
+          <p>Gained strong foundations in <strong>Data Structures, OOPS, and Web Technologies</strong>.</p>
         </div>
         <div className="education-imgCard">
             <div className="educaiton-imgs">

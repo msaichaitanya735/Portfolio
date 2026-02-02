@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "./NavBar";
 import "./Homepage.css";
 import Button from "@mui/material/Button";
@@ -14,16 +14,10 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
+const OPEN_TO_OPPORTUNITIES_TEXT = "Seeking W-2 AI Engineer / Full-Stack AI Engineer / LLM Specialist roles (H-1B sponsorship; currently on F-1 OPT).";
+
 function HomePage() {
-  const handleResumeDownload = () => {
-    const resumeUrl = process.env.PUBLIC_URL + "/resume.pdf";
-    const link = document.createElement("a");
-    link.href = resumeUrl;
-    link.download = "SaiChaitanya_Resume.pdf"; // Custom file name
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  const [showOpportunitiesDetail, setShowOpportunitiesDetail] = useState(false);
 
   return (
     <div className="hero-Example">
@@ -32,12 +26,32 @@ function HomePage() {
         <div className="homepage-container-left">
           <div className="text-container">SAICHAITANYA MUTHYALA</div>
           <p className="paragraph-container">
-            A highly skilled AI, Automation, and Web Developer with expertise in LLMs, React, Node.js, Spring Boot, and AI-driven automation, pursuing an MS in Computer Science (GPA 3.6). I have a passion for building scalable web applications and leveraging AI to solve complex problems, with experience in cloud technologies like AWS.
+            Full-Stack AI Engineer (LLM/RAG) — I build production-grade AI workflows end-to-end (FastAPI + Next.js) with real-time streaming, evaluation, and cost-aware infrastructure.
           </p>
+          <p className="paragraph-container paragraph-recently">
+            Recently: built streaming anomaly detection UX + multi-step LLM pipeline (Detector → Explainer → Reporter) for cybersecurity logs.
+          </p>
+          <div className="hero-open-badge-wrap">
+            <span
+              className="hero-open-badge"
+              onClick={() => setShowOpportunitiesDetail(!showOpportunitiesDetail)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => e.key === "Enter" && setShowOpportunitiesDetail(!showOpportunitiesDetail)}
+              aria-expanded={showOpportunitiesDetail}
+            >
+              Open to opportunities
+            </span>
+            {showOpportunitiesDetail && (
+              <p className="hero-opportunities-detail">{OPEN_TO_OPPORTUNITIES_TEXT}</p>
+            )}
+          </div>
           <div className="button-container">
-            <Button variant="contained" color="success" onClick={handleResumeDownload}>
-              <span>Resume <DownloadIcon /></span>
-            </Button>
+            <a href="/resume.pdf" download="SaiChaitanya_Resume.pdf" style={{ textDecoration: "none" }}>
+              <Button variant="contained" color="success">
+                <span>Resume <DownloadIcon /></span>
+              </Button>
+            </a>
             <a href="#contact">
             <Button variant="contained" color="success" >
               <span>Hire Me <SendIcon /></span>

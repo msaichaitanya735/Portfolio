@@ -16,7 +16,7 @@ function NavBar() {
                 <a href="#skills" className="nav-item">Skills</a>
                 <a href="#projects" className="nav-item">Projects</a>
                 <a href="#contact" className="nav-item">Contact</a>
-                <a href="/" className="nav-item resume-btn">Resume</a>
+                <a href="/resume.pdf" className="nav-item resume-btn" download="SaiChaitanya_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
         </div>
         {/* Mobile Menu Button */}

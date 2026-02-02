@@ -23,6 +23,42 @@
     color: #ccc;
 }
 
+.footer-open-badge-wrap {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-open-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #a9ff5c;
+    background: rgba(169, 255, 92, 0.15);
+    border: 1px solid #a9ff5c;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.footer-open-badge:hover {
+    background: rgba(169, 255, 92, 0.25);
+}
+
+.footer-opportunities-detail {
+    margin-top: 10px;
+    padding: 10px 14px;
+    max-width: 420px;
+    font-size: 0.9rem;
+    color: #ccc;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #444;
+    border-radius: 8px;
+    text-align: center;
+}
+
 /* Navigation Links */
 .footer-links {
     display: flex;
