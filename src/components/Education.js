@@ -17,7 +17,7 @@ function Education() {
         <div className="education-text">
           <h2>Master's in Computer Science</h2>
           <p>University of Central Missouri | 2023 - 2025</p>
-          <p>Specializing in <strong>Full-Stack Development, Cloud Computing, and AI</strong>.</p>
+          <p>Specialized in <strong>Natural Language Processing (NLP) & Machine Learning (ML)</strong>.</p>
         </div>
         {/* <div className="education-img">
         <img src={UCMLogo} alt="Master's Degree"/>

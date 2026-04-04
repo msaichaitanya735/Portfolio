@@ -30,9 +30,11 @@ const EachProject = () => {
   let { id } = useParams();
   const [data] = useState(projects[id]);
   
-  const slides = data.screenshot.map((x, i) => {
-    return (<img src={x} key={i} alt={`screenshot ${i+1}`} />);
-  });
+  const slides = data.screenshot && data.screenshot.length > 0
+    ? data.screenshot.map((x, i) => {
+        return (<img src={x} key={i} alt={`screenshot ${i+1}`} />);
+      })
+    : [];
 
   const getIconSrc = (techName) => {
     // Check if a CDN URL exists for the tech name (case-insensitive)
@@ -47,9 +49,11 @@ const EachProject = () => {
   return (
     <div className="eachprojectcontainer">
       <div className="logo"><a href="/">Chay</a></div>
-      <div className="carousel">
-        <Carousel slides={slides} />
-      </div>
+      {slides.length > 0 && (
+        <div className="carousel">
+          <Carousel slides={slides} />
+        </div>
+      )}
       <div className="proTitle">{data.title}</div>
       <div className="projectdescription">
         {data.desc}

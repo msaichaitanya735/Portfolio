@@ -26,10 +26,10 @@ function HomePage() {
         <div className="homepage-container-left">
           <div className="text-container">SAICHAITANYA MUTHYALA</div>
           <p className="paragraph-container">
-            Full-Stack AI Engineer (LLM/RAG) — I build production-grade AI workflows end-to-end (FastAPI + Next.js) with real-time streaming, evaluation, and cost-aware infrastructure.
+            Software Engineer with 5+ years of full-stack experience building web applications with React/TypeScript and Python. Proficient in API design, data visualization, LLM application development, and MCP/agentic frameworks.
           </p>
           <p className="paragraph-container paragraph-recently">
-            Recently: built streaming anomaly detection UX + multi-step LLM pipeline (Detector → Explainer → Reporter) for cybersecurity logs.
+            Recently: shipped a production-level AI application from 0 to 1 in 2 days. Currently building end-to-end AI-powered web applications at HapTag AI.
           </p>
           <div className="hero-open-badge-wrap">
             <span

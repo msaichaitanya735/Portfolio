@@ -30,6 +30,22 @@ import ra5 from '../images/project/resumeautomation/Sheet.png';
 
 export const projects = [
     {
+        title: "JobFlow",
+        desc: "AI-Native App Built in 2 Days with LLM Coding Tools. Rapidly prototyped production-level AI application using Claude Code and Cursor: Python/FastAPI backend with LLM API integration, prompt engineering, custom ML scoring, and React/TypeScript frontend; demonstrates 0-to-1 shipping velocity with AI-assisted development.",
+        type: "AI Application",
+        sourcecode: "https://github.com/msaichaitanya735",
+        tech: ['Python', 'FastAPI', 'react', 'TypeScript', 'OpenAI', 'LangChain'],
+        screenshot: []
+    },
+    {
+        title: "LifeOS",
+        desc: "Full-stack AI platform with custom MCP server, LangChain orchestration, RAG on pgvector, Python/FastAPI backend, React/TypeScript frontend with D3.js data visualizations and SSE streaming; API design and systems integration.",
+        type: "AI Platform",
+        sourcecode: "https://saichaitanyamuthyala.com/lifeos",
+        tech: ['Python', 'FastAPI', 'react', 'TypeScript', 'OpenAI', 'LangChain', 'D3.js'],
+        screenshot: []
+    },
+    {
         title : "Private Mailing System",
         desc: "Private Maling System allows a user to transfer encrypted data to other user without any 3rd party mailing services.",
         type: "WebApp",

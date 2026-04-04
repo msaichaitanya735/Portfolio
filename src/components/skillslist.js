@@ -4,10 +4,8 @@ import css from '../images/icons/css.svg';
 import react from '../images/icons/react.svg';
 import javascript from '../images/icons/javascript.svg';
 import nodejs from '../images/icons/nodejs.svg';
-import redux from '../images/icons/redux.svg';
-import expressjs from '../images/icons/expressjs.svg';
+// redux and bootstrap icons removed - not featured on resume
 import git from '../images/icons/github.svg';
-import getbootstrap from '../images/icons/getbootstrap.svg';
 import python from '../images/icons/python.png';
 import java from '../images/icons/Java.png';
 import springBoot from '../images/icons/Spring.png';
@@ -16,7 +14,7 @@ import tailwind from '../images/icons/TailwindCss.png';
 import docker from '../images/icons/Docker.png';
 import fastapi from '../images/icons/fastapi.png';
 import langchain from '../images/icons/langchain.png';
-import gemini from '../images/icons/gemini.png';
+// gemini icon removed - not featured on resume
 import pgvector from '../images/icons/pgvector.png';
 import openai from '../images/icons/OpenAI.png';
 
@@ -54,6 +52,21 @@ const sse_icon = 'data:image/svg+xml,' + encodeURIComponent(
 );
 
 
+// External icon URLs for new skills
+const claude_icon = 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Claude_AI_logo.svg';
+const d3_icon = 'https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg';
+const redis_icon = 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg';
+const mongodb_icon = 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg';
+const kafka_icon = 'https://raw.githubusercontent.com/devicons/devicon/master/icons/apachekafka/apachekafka-original.svg';
+const kubernetes_icon = 'https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg';
+const terraform_icon = 'https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg';
+const githubactions_icon = 'https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-original.svg';
+
+// MCP icon (simple connector/plug icon)
+const mcp_icon = 'data:image/svg+xml,' + encodeURIComponent(
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="8"/><path d="M24 4v12M24 32v12M4 24h12M32 24h12"/><circle cx="24" cy="4" r="3" fill="#a9ff5c"/><circle cx="24" cy="44" r="3" fill="#a9ff5c"/><circle cx="4" cy="24" r="3" fill="#a9ff5c"/><circle cx="44" cy="24" r="3" fill="#a9ff5c"/></svg>'
+);
+
 // Grouped skills: LLM/AI, Backend, Frontend, Cloud/DevOps
 export const skillGroups = [
   {
@@ -61,12 +74,11 @@ export const skillGroups = [
     skills: [
       { name: 'RAG', image: rag_icon },
       { name: 'pgvector', image: pgvector },
-      { name: 'Embeddings', image: openai },
       { name: 'Prompt Eng.', image: gpt_icon },
       { name: 'Eval / Testing', image: eval_testing_icon },
-      { name: 'Structured Outputs', image: structured_outputs_icon },
-      { name: 'GPT', image: gpt_icon },
-      { name: 'Gemini', image: gemini },
+      { name: 'MCP', image: mcp_icon },
+      { name: 'OpenAI', image: openai },
+      { name: 'Claude', image: claude_icon },
       { name: 'LangChain', image: langchain },
     ],
   },
@@ -79,9 +91,11 @@ export const skillGroups = [
       { name: 'PostgreSQL', image: postgresql_icon },
       { name: 'REST', image: rest_icon },
       { name: 'SSE / Streaming', image: sse_icon },
-      { name: 'Express.js', image: expressjs },
       { name: 'Java', image: java },
       { name: 'Spring Boot', image: springBoot },
+      { name: 'Redis', image: redis_icon },
+      { name: 'MongoDB', image: mongodb_icon },
+      { name: 'Kafka', image: kafka_icon },
     ],
   },
   {
@@ -90,12 +104,11 @@ export const skillGroups = [
       { name: 'React', image: react },
       { name: 'Next.js', image: nextjs_icon },
       { name: 'TypeScript', image: typescript_icon },
+      { name: 'D3.js', image: d3_icon },
       { name: 'Tailwind CSS', image: tailwind },
+      { name: 'JavaScript', image: javascript },
       { name: 'HTML', image: html },
       { name: 'CSS', image: css },
-      { name: 'JavaScript', image: javascript },
-      { name: 'Redux', image: redux },
-      { name: 'Bootstrap', image: getbootstrap },
     ],
   },
   {
@@ -105,6 +118,9 @@ export const skillGroups = [
       { name: 'Lambda', image: aws_lambda_icon },
       { name: 'S3', image: aws_s3_icon },
       { name: 'Docker', image: docker },
+      { name: 'Kubernetes', image: kubernetes_icon },
+      { name: 'Terraform', image: terraform_icon },
+      { name: 'GitHub Actions', image: githubactions_icon },
       { name: 'Git', image: git },
     ],
   },
