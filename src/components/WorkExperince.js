@@ -3,10 +3,7 @@ import "./WorkExperience.css";
 import cognizant from "../images/me/Cognizant-Logo.jpg";
 import codingstudio from "../images/me/codingStudios.jpg";
 import haptag from "../images/me/haptag_logo.png";
-
-const capitalOneLogo = 'data:image/svg+xml,' + encodeURIComponent(
-  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" rx="20" fill="#004977"/><text x="100" y="130" text-anchor="middle" font-family="Arial,sans-serif" font-size="48" font-weight="bold" fill="white">Capital</text><text x="100" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="40" font-weight="bold" fill="#D03027">One</text></svg>'
-);
+import capitalOneLogo from "../images/me/capitalone_logo.png";
 
 
 function WorkExperience() {
