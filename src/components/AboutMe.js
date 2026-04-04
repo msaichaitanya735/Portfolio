@@ -18,11 +18,10 @@ function AboutMe() {
 
       {/* Description Section */}
       <div className="about-description">
-        <h2>Passionate and dedicated full-stack developer</h2>
+        <h2>Software Engineer &amp; AI Application Builder</h2>
         <p>
-                   With expertise in <span> React, Node.js, Spring Boot, and AI technologies like GPT and Gemini</span>, I create
-          seamless and high-performance applications. My focus is on building
-          scalable solutions, automating complex processes, and enhancing user experiences.
+                   With expertise in <span>React/TypeScript, Python, and AI technologies including LLM APIs, LangChain/LangGraph, and MCP frameworks</span>, I create
+          seamless and high-performance applications. My focus is on API design, data visualization (D3.js, Plotly, Recharts), and building AI-powered workflows end-to-end.
         </p>
       </div>
 
@@ -36,7 +35,7 @@ function AboutMe() {
         <div className="feature-box">
           <span className="feature-icon">🌎</span>
           <h3>AI & Full-Stack Development</h3>
-          <p>Expertise in both AI, automation , frontend and backend technologies.</p>
+          <p>Expertise in LLM applications, prompt engineering, and full-stack web development.</p>
         </div>
         <div className="feature-box">
           <span className="feature-icon">🚀</span>

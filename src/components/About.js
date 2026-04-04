@@ -13,12 +13,12 @@ const About = () => {
         </div>
         <div className="centerboxs">
             <span>
-            I’m an AI, Automation, and Web Developer passionate about building scalable, high-performance web applications.
-            <span>Currently, I’m pursuing my Master’s in Computer Science at the University of Central Missouri, deepening my expertise in software development and AI.</span>
+            Software Engineer with 5+ years of full-stack experience building web applications with React/TypeScript and Python.
+            <span>I hold a Master’s in Computer Science (NLP & ML) from the University of Central Missouri.</span>
 
-            <span>Previously, I worked at Cognizant India for 2 years, where I developed and optimized full-stack applications. I am currently working as an AI Engineer at Haptag, where I build applications, work on prompt engineering, and develop AI models for cybersecurity anomaly detection. I'm actively open to new opportunities.</span>
+            <span>Currently an AI Engineer at HapTag AI, previously a Software Engineer at Capital One, and a Programmer Analyst at Cognizant (Client: Pearson). I build end-to-end AI-powered applications, design robust APIs, and create interactive data visualizations. I’m actively open to new opportunities.</span>
 
-            I specialize in React, Node.js, and modern web technologies, and I am proficient with AI tools like GPT, Gemini, and LangChain. I enjoy turning complex problems into efficient, elegant, and impactful solutions.
+            I specialize in React/TypeScript, Python/FastAPI, and AI technologies including LLM APIs, LangChain/LangGraph, MCP frameworks, and data visualization with D3.js, Plotly, and Recharts.
             </span>
         </div>
         

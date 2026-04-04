@@ -105,7 +105,7 @@ function Contact() {
           <a href="mailto:saichaitanyamuthyalas@gmail.com">
             <EmailIcon/>
           </a>
-          <a href="https://www.linkedin.com/in/saichaitanya-muthyala-3204a71a0/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/saichaitanya-muthyala" target="_blank" rel="noopener noreferrer">
             <LinkedInIcon/>
           </a>
           <a href="https://github.com/msaichaitanya735" target="_blank" rel="noopener noreferrer">
