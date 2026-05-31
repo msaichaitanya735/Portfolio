@@ -3,7 +3,7 @@ import "./WorkExperience.css";
 import cognizant from "../images/me/Cognizant-Logo.jpg";
 import codingstudio from "../images/me/codingStudios.jpg";
 import haptag from "../images/me/haptag_logo.png";
-import capitalOneLogo from "../images/me/capitalone_logo.png";
+// import capitalOneLogo from "../images/me/capitalone_logo.png";
 
 
 function WorkExperience() {
@@ -37,7 +37,7 @@ function WorkExperience() {
         </div>
       </div>
 
-      {/* Capital One */}
+      {/* Capital One - commented out
       <div className="experience-item">
         <div className="experience-text">
           <h2>Software Engineer</h2>
@@ -56,6 +56,7 @@ function WorkExperience() {
             </div>
         </div>
       </div>
+      */}
 
       {/* Cognizant */}
       <div className="experience-item">
