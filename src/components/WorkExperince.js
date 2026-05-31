@@ -3,7 +3,6 @@ import "./WorkExperience.css";
 import cognizant from "../images/me/Cognizant-Logo.jpg";
 import codingstudio from "../images/me/codingStudios.jpg";
 import haptag from "../images/me/haptag_logo.png";
-// import capitalOneLogo from "../images/me/capitalone_logo.png";
 
 
 function WorkExperience() {
@@ -36,27 +35,6 @@ function WorkExperience() {
             </div>
         </div>
       </div>
-
-      {/* Capital One - commented out
-      <div className="experience-item">
-        <div className="experience-text">
-          <h2>Software Engineer</h2>
-          <p><strong>Capital One</strong> – United States | Jan 2024 - Jun 2025</p>
-          <p>
-            <ul>
-              <li>Built internal LLM-powered documentation search tool using OpenAI API and Python: ingested 2K+ internal wiki pages with semantic search, served through a React/TypeScript interface; reduced onboarding lookup time from 15 minutes to under 30 seconds.</li>
-              <li>Developed interactive data visualization platform (Tableau, Power BI) for institutional reporting: real-time enrollment trend dashboards, cohort comparison heatmaps, and drill-down views serving 500+ institutions.</li>
-              <li>Prototyped LangChain/CrewAI-based workflow for automated assessment summarization: chained prompt engineering with retrieval from PostgreSQL-backed course metadata.</li>
-            </ul>
-          </p>
-        </div>
-        <div className="experience-imgCard">
-            <div className="experience-imgHolder">
-                <img src={capitalOneLogo} alt="Capital One" />
-            </div>
-        </div>
-      </div>
-      */}
 
       {/* Cognizant */}
       <div className="experience-item">
