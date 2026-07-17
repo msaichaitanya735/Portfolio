@@ -17,7 +17,7 @@ const techIconUrls = {
     'Python': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg',
     'FastAPI': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg',
     'TypeScript': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
-    'LangChain': 'https://raw.githubusercontent.com/langchain-ai/.github/main/profile/logo-dark.svg',
+    'LangChain': '/images/icons/langchain.png',
     'D3.js': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg',
     'PostgreSQL': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg',
     'Redis': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg',
@@ -48,12 +48,12 @@ const EachProject = () => {
     : [];
 
   const getIconSrc = (techName) => {
-    // Check if a CDN URL exists for the tech name (case-insensitive)
+    // Check if a mapped icon path exists for the tech name (case-insensitive)
     const key = Object.keys(techIconUrls).find(k => k.toLowerCase() === techName.toLowerCase());
-    if (key && techIconUrls[key].startsWith('http')) {
+    if (key) {
       return techIconUrls[key];
     }
-    // Otherwise, use the original local path logic
+    // Otherwise, fall back to a local SVG named after the tech
     return `/images/icons/${techName}.svg`;
   };
 
