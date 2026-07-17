@@ -12,7 +12,6 @@ I'm a Software Engineer with 5+ years developing production systems and 2+ years
 
 - 🎓 **MS in Computer Science (NLP & Machine Learning)** — University of Central Missouri
 - 🏆 **IEEE Xtreme 2021** — All India Rank 15 &nbsp;•&nbsp; **IEEE Xtreme 2020** — Rank 16
-- 🥇 **Smart India Hackathon 2019** — Winner (50K+ teams)
 - 📍 United States &nbsp;•&nbsp; ✉️ saichaitanyamuthyalas@gmail.com
 
 ---
