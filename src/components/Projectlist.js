@@ -31,18 +31,18 @@ import ra5 from '../images/project/resumeautomation/Sheet.png';
 export const projects = [
     {
         title: "JobFlow",
-        desc: "Agentic AI product with ML infrastructure: model deployment, evaluation, and optimization; NLP-powered information retrieval and content safety controls. Python/FastAPI with large-scale system design; agentic workflows over LLM APIs with structured outputs and eval harness.",
+        desc: "An AI-native automation stack I built to run my own job hunt end-to-end. Distributed subagent orchestration on the Claude Agent SDK: a JD analyzer, a STAR story-ledger, a LaTeX resume builder, a cover-letter narrator, an ATS scoring pass, and a Playwright submission layer. A single trigger phrase (\"Fire the LaTeX\") kicks off the pipeline — JD → tailored resume + cover letter PDFs → application submitted. Notion is the state store; async ClaudeSDKClient runs batches concurrently so 50 applications compile in roughly the time of one.",
         type: "Agentic AI Product",
         sourcecode: "https://github.com/msaichaitanya735",
-        tech: ['Python', 'FastAPI', 'react', 'TypeScript', 'OpenAI', 'LangChain'],
+        tech: ['Python', 'Claude Agent SDK', 'LangChain', 'Playwright', 'LaTeX', 'Notion API'],
         screenshot: []
     },
     {
         title: "LifeOS",
-        desc: "AI platform with Generative AI tools, content safety, and secure AI patterns; data processing pipelines with schema-validated structured outputs. Python/FastAPI backend with distributed system design; RAG on pgvector, LangChain orchestration, and React/TypeScript frontend with D3.js visualizations and SSE streaming.",
+        desc: "A personal decision-record engine and long-term memory layer for AI assistants. Four-tier \"Pragmatic Intelligence\" architecture: Redis conversation buffer → pgvector episodic memory → PostgreSQL structured facts → semantic recall that assembles retrieval context for the LLM. LangChain orchestrates the retrieval + synthesis pipeline; provenance citations trace every claim back to its source note or chat so the system stays auditable. Python/FastAPI backend with a React/TypeScript frontend and D3.js timeline visualizations.",
         type: "AI Platform",
         sourcecode: "https://saichaitanyamuthyala.com/lifeos",
-        tech: ['Python', 'FastAPI', 'react', 'TypeScript', 'OpenAI', 'LangChain', 'D3.js'],
+        tech: ['Python', 'FastAPI', 'PostgreSQL', 'pgvector', 'Redis', 'LangChain', 'react', 'TypeScript', 'D3.js'],
         screenshot: []
     },
     {

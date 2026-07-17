@@ -19,6 +19,12 @@ const techIconUrls = {
     'TypeScript': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
     'LangChain': 'https://raw.githubusercontent.com/langchain-ai/.github/main/profile/logo-dark.svg',
     'D3.js': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg',
+    'PostgreSQL': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg',
+    'Redis': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg',
+    'pgvector': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg',
+    'Playwright': 'https://playwright.dev/img/playwright-logo.svg',
+    'Notion API': 'https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png',
+    'Claude Agent SDK': 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Claude_AI_logo.svg',
     'github': '/images/icons/github.svg', // Keep local icons as fallback
     'react': '/images/icons/react.svg',
     'nodejs': '/images/icons/nodejs.svg',
