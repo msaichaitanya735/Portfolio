@@ -12,7 +12,7 @@ const techIconUrls = {
     'Docker': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg',
     'OpenAI': 'https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg',
     'Regex': 'https://upload.wikimedia.org/wikipedia/commons/d/da/Pictogram_voting_regex.svg', // Placeholder, specific Regex logo is uncommon
-    'LaTeX': 'https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg',
+    'LaTeX': '/images/icons/latex.svg',
     'Overleaf': 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Overleaf_Logo.svg',
     'Python': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg',
     'FastAPI': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg',
@@ -24,7 +24,7 @@ const techIconUrls = {
     'pgvector': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg',
     'Playwright': 'https://playwright.dev/img/playwright-logo.svg',
     'Notion API': 'https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png',
-    'Claude Agent SDK': 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Claude_AI_logo.svg',
+    'Claude Agent SDK': '/images/icons/claude-agent-sdk.svg',
     'github': '/images/icons/github.svg', // Keep local icons as fallback
     'react': '/images/icons/react.svg',
     'nodejs': '/images/icons/nodejs.svg',
