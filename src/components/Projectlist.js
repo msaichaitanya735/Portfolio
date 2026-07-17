@@ -31,15 +31,15 @@ import ra5 from '../images/project/resumeautomation/Sheet.png';
 export const projects = [
     {
         title: "JobFlow",
-        desc: "AI-Native App Built in 2 Days with LLM Coding Tools. Rapidly prototyped production-level AI application using Claude Code and Cursor: Python/FastAPI backend with LLM API integration, prompt engineering, custom ML scoring, and React/TypeScript frontend; demonstrates 0-to-1 shipping velocity with AI-assisted development.",
-        type: "AI Application",
+        desc: "Agentic AI product with ML infrastructure: model deployment, evaluation, and optimization; NLP-powered information retrieval and content safety controls. Python/FastAPI with large-scale system design; agentic workflows over LLM APIs with structured outputs and eval harness.",
+        type: "Agentic AI Product",
         sourcecode: "https://github.com/msaichaitanya735",
         tech: ['Python', 'FastAPI', 'react', 'TypeScript', 'OpenAI', 'LangChain'],
         screenshot: []
     },
     {
         title: "LifeOS",
-        desc: "Full-stack AI platform with custom MCP server, LangChain orchestration, RAG on pgvector, Python/FastAPI backend, React/TypeScript frontend with D3.js data visualizations and SSE streaming; API design and systems integration.",
+        desc: "AI platform with Generative AI tools, content safety, and secure AI patterns; data processing pipelines with schema-validated structured outputs. Python/FastAPI backend with distributed system design; RAG on pgvector, LangChain orchestration, and React/TypeScript frontend with D3.js visualizations and SSE streaming.",
         type: "AI Platform",
         sourcecode: "https://saichaitanyamuthyala.com/lifeos",
         tech: ['Python', 'FastAPI', 'react', 'TypeScript', 'OpenAI', 'LangChain', 'D3.js'],

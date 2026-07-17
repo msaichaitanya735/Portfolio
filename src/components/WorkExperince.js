@@ -3,6 +3,7 @@ import "./WorkExperience.css";
 import cognizant from "../images/me/Cognizant-Logo.jpg";
 import codingstudio from "../images/me/codingStudios.jpg";
 import haptag from "../images/me/haptag_logo.png";
+import capitalone from "../images/me/capitalone_logo.jpg";
 
 
 function WorkExperience() {
@@ -11,21 +12,21 @@ function WorkExperience() {
       {/* Title Section */}
       <div className="experience-title">
         <h1>Professional <span>EXPERIENCE</span></h1>
-        <p>Bringing expertise in AI, full-stack development, and data visualization.</p>
+        <p>Software Engineer, AI/ML — ML infrastructure, Generative AI, and content safety across cybersecurity and regulated financial environments.</p>
       </div>
 
       {/* HapTag AI */}
       <div className="experience-item">
         <div className="experience-text">
-          <h2>AI Engineer</h2>
-          <p><strong>HapTag AI</strong> (Cybersecurity Startup) – Remote, USA | Jun 2025 - Present</p>
+          <h2>Software Engineer, AI/ML</h2>
+          <p><strong>HapTag AI</strong> (Cybersecurity Startup) – Remote, USA | Jun 2025 - April 2026</p>
+          <p><em>Python, FastAPI, OpenAI, Claude, Gemini, LangChain, LangGraph, pgvector, Docker, AWS, CI/CD</em></p>
           <p>
             <ul>
-              <li>Built end-to-end AI-powered web application (React/TypeScript frontend + Python/FastAPI backend) as one of 3 engineers; rapidly prototyped features going from 0 to 1 in weekly sprints.</li>
-              <li>Created interactive dashboards and data visualizations using D3.js force-directed network graphs, Recharts time-series charts, and Plotly-style analytics views with virtualized tables (50K+ entries).</li>
-              <li>Built LLM applications with prompt engineering, MCP server development, and LangChain/LangGraph agentic workflows: 3 AI agents with tool/function calling processing 1K+ events/day.</li>
-              <li>Designed robust APIs: FastAPI inference gateway with async orchestration, connection pooling, SSE streaming; load-tested to 50 concurrent connections at p99 under 3s.</li>
-              <li>Prototyped evaluation framework (500-event dataset, 7 scoring dimensions, LLM-as-judge at 87% human agreement) and automated in CI/CD.</li>
+              <li>Built ML infrastructure for 3 production AI systems: model deployment, evaluation, optimization, and data processing pipelines; implemented Generative AI tools processing 1K+ events/day at 94% validity with agentic AI workflows.</li>
+              <li>Implemented AI content safety and security controls: input validation, output filtering, user harm mitigation, and secure coding practices in the cybersecurity domain; applied application security patterns for web-facing AI services.</li>
+              <li>Prototyped, evaluated, and productized AI features: NLP-powered information retrieval, agentic product capabilities; collaborated with peers through design and code reviews ensuring best practices in ML development.</li>
+              <li>Triaged and debugged production AI system issues across model behavior, data pipeline, and service operations; tracked and resolved with systematic debugging and monitoring.</li>
             </ul>
           </p>
         </div>
@@ -36,16 +37,39 @@ function WorkExperience() {
         </div>
       </div>
 
+      {/* Capital One */}
+      <div className="experience-item reverse">
+        <div className="experience-text">
+          <h2>Software Engineer</h2>
+          <p><strong>Capital One</strong> (Financial Services) – United States | Jan 2024 - Jun 2025</p>
+          <p><em>Python, FastAPI, TypeScript, Node.js, LangChain, pgvector, PostgreSQL, Azure, AWS, Docker, CI/CD</em></p>
+          <p>
+            <ul>
+              <li>Built ML infrastructure for a production AI application: model deployment, evaluation, and optimization with a data processing pipeline; Generative AI integration on the internal customer-servicing platform serving 500+ authorized servicing associates across operations teams.</li>
+              <li>Implemented application security patterns in a regulated financial environment: web application security, input validation, access controls, PII masking, and data privacy compliance for secure handling of sensitive financial data.</li>
+              <li>Designed structured reasoning traces and provenance citations to satisfy Model Risk Management explainability requirements; human-in-the-loop sign-off was the architecture, not an add-on.</li>
+              <li>Collaborated through design and code reviews across AI, platform, and data engineering boundaries; contributed to large-scale system design and distributed computing patterns (LangChain orchestration, pgvector retrieval, FastAPI services).</li>
+            </ul>
+          </p>
+        </div>
+        <div className="experience-imgCard">
+            <div className="experience-imgHolder">
+                <img src={capitalone} alt="Capital One" />
+            </div>
+        </div>
+      </div>
+
       {/* Cognizant */}
       <div className="experience-item">
         <div className="experience-text">
-          <h2>Programmer Analyst (Full-Stack)</h2>
+          <h2>Software Engineer</h2>
           <p><strong>Cognizant Technology Solutions</strong> (Client: Pearson) – Hyderabad, India | Jan 2021 - Jun 2023</p>
+          <p><em>Python, Java, Spring Boot, TypeScript, PostgreSQL, Kafka, AWS Lambda, SQS, S3, Docker, Kubernetes</em></p>
           <p>
             <ul>
-              <li>Built full-stack web applications (React/TypeScript + Spring Boot APIs) serving 200K+ students; created data visualization dashboards adopted by 120+ institutions in 3 months.</li>
-              <li>Designed API-driven event architecture (12 microservices, Spring Boot + Kafka) with systems integration across bounded contexts; 3x peak load at 99.7% uptime handling 50K+ events/hour.</li>
-              <li>Architected serverless Python data pipeline on AWS (Lambda, SQS, Glue, Athena) for 500+ institutions; handled 12x traffic spike with zero data loss.</li>
+              <li>Developed large-scale distributed systems handling information at massive scale: 12 microservices with event-driven architecture processing 50K+ events/hour at 99.7% uptime serving 200K+ users.</li>
+              <li>Built data processing and ML-ready infrastructure on AWS (Lambda, SQS, S3, Glue pipelines); optimized data structures and algorithms for performance at scale across 120+ institutions.</li>
+              <li>Contributed to React/TypeScript applications for Pearson's education platform; improved responsiveness through state optimization, lazy-loaded routes, and reduced re-renders.</li>
             </ul>
           </p>
         </div>
@@ -57,13 +81,15 @@ function WorkExperience() {
       </div>
 
       {/* coding.Studio */}
-      <div className="experience-item">
+      <div className="experience-item reverse">
         <div className="experience-text">
           <h2>Software Development Engineer</h2>
           <p><strong>coding.Studio();</strong> – Hyderabad, India | Jan 2020 - Jan 2021</p>
+          <p><em>Python, Java, TypeScript, PostgreSQL, Docker, CI/CD</em></p>
           <p>
             <ul>
-              <li>Delivered full-stack features in Python and Java with React components, REST API contracts, and PostgreSQL-backed workflows; rapidly prototyped internal tools and shipped iteratively in a small team.</li>
+              <li>Developed production software with Python and Java: REST APIs, data structures, algorithms, and secure coding practices.</li>
+              <li>Collaborated through code reviews and design discussions: ensured best practices in style, testability, and efficiency while shipping iteratively in a small team.</li>
             </ul>
           </p>
         </div>

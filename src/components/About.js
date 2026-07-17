@@ -13,12 +13,12 @@ const About = () => {
         </div>
         <div className="centerboxs">
             <span>
-            Software Engineer with 5+ years of full-stack experience building web applications with React/TypeScript and Python.
-            <span>I hold a Master’s in Computer Science (NLP & ML) from the University of Central Missouri.</span>
+            Software Engineer, AI/ML with 5+ years developing production systems and 2+ years in ML infrastructure — model deployment, evaluation, optimization, and data processing.
+            <span>I hold a Master’s in Computer Science (NLP &amp; ML) from the University of Central Missouri.</span>
 
-            <span>Currently an AI Engineer at HapTag AI and previously a Programmer Analyst at Cognizant (Client: Pearson). I build end-to-end AI-powered applications, design robust APIs, and create interactive data visualizations. I’m actively open to new opportunities.</span>
+            <span>Currently at HapTag AI (cybersecurity) building agentic AI workflows and content-safety controls. Previously at Capital One (Jan 2024 – Jun 2025), where I built ML infrastructure and Generative AI integration in a regulated financial environment. Before that, distributed systems at Cognizant (Client: Pearson).</span>
 
-            I specialize in React/TypeScript, Python/FastAPI, and AI technologies including LLM APIs, LangChain/LangGraph, MCP frameworks, and data visualization with D3.js, Plotly, and Recharts.
+            I specialize in Python/FastAPI, LLM APIs (OpenAI, Claude, Gemini), LangChain/LangGraph, RAG on pgvector, application security, and large-scale system design. IEEE Xtreme 2021 All India Rank 15.
             </span>
         </div>
         

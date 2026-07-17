@@ -23,8 +23,10 @@ const gpt_icon = 'https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_lo
 const typescript_icon = 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg';
 const nextjs_icon = 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg';
 const postgresql_icon = 'https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg';
-const aws_lambda_icon = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amazon_Lambda_architecture_logo.svg/2560px-Amazon_Lambda_architecture_logo.svg.png';
+const aws_lambda_icon = 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Amazon_Lambda_architecture_logo.svg';
 const aws_s3_icon = 'https://upload.wikimedia.org/wikipedia/commons/b/bc/Amazon-S3-Logo.svg';
+const azure_icon = 'https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg';
+const gemini_icon = 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg';
 
 // RAG: unique icon (document + magnifying glass = retrieval) — not LangChain
 const rag_icon = 'data:image/svg+xml,' + encodeURIComponent(
@@ -70,16 +72,18 @@ const mcp_icon = 'data:image/svg+xml,' + encodeURIComponent(
 // Grouped skills: LLM/AI, Backend, Frontend, Cloud/DevOps
 export const skillGroups = [
   {
-    title: 'LLM / AI Systems',
+    title: 'ML Infrastructure / GenAI',
     skills: [
+      { name: 'OpenAI', image: openai },
+      { name: 'Claude', image: claude_icon },
+      { name: 'Gemini', image: gemini_icon },
+      { name: 'LangChain', image: langchain },
+      { name: 'LangGraph', image: langchain },
       { name: 'RAG', image: rag_icon },
       { name: 'pgvector', image: pgvector },
       { name: 'Prompt Eng.', image: gpt_icon },
       { name: 'Eval / Testing', image: eval_testing_icon },
       { name: 'MCP', image: mcp_icon },
-      { name: 'OpenAI', image: openai },
-      { name: 'Claude', image: claude_icon },
-      { name: 'LangChain', image: langchain },
     ],
   },
   {
@@ -112,11 +116,12 @@ export const skillGroups = [
     ],
   },
   {
-    title: 'Cloud / DevOps',
+    title: 'Infrastructure',
     skills: [
       { name: 'AWS', image: aws },
       { name: 'Lambda', image: aws_lambda_icon },
       { name: 'S3', image: aws_s3_icon },
+      { name: 'Azure', image: azure_icon },
       { name: 'Docker', image: docker },
       { name: 'Kubernetes', image: kubernetes_icon },
       { name: 'Terraform', image: terraform_icon },

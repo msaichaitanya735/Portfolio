@@ -18,10 +18,9 @@ function AboutMe() {
 
       {/* Description Section */}
       <div className="about-description">
-        <h2>Software Engineer &amp; AI Application Builder</h2>
+        <h2>Software Engineer, AI/ML — ML Infrastructure &amp; Content Safety</h2>
         <p>
-                   With expertise in <span>React/TypeScript, Python, and AI technologies including LLM APIs, LangChain/LangGraph, and MCP frameworks</span>, I create
-          seamless and high-performance applications. My focus is on API design, data visualization (D3.js, Plotly, Recharts), and building AI-powered workflows end-to-end.
+          I build production ML infrastructure and Generative AI systems with a focus on <span>model deployment, evaluation, optimization, and data processing</span>. My work spans <span>LLM APIs (OpenAI, Claude, Gemini), RAG on pgvector, agentic workflows, and application security</span> — from cybersecurity at HapTag AI to a regulated financial environment at Capital One. MS in Computer Science (NLP &amp; Machine Learning), University of Central Missouri.
         </p>
       </div>
 
@@ -29,18 +28,18 @@ function AboutMe() {
       <div className="about-features">
         <div className="feature-box">
           <span className="feature-icon">⚡</span>
-          <h3>Fast & Efficient</h3>
-          <p>Developing optimized code to ensure high-speed performance.</p>
+          <h3>ML Infrastructure</h3>
+          <p>Model deployment, evaluation, optimization, and data processing pipelines for production AI systems.</p>
         </div>
         <div className="feature-box">
-          <span className="feature-icon">🌎</span>
-          <h3>AI & Full-Stack Development</h3>
-          <p>Expertise in LLM applications, prompt engineering, and full-stack web development.</p>
+          <span className="feature-icon">🛡️</span>
+          <h3>AI Content Safety</h3>
+          <p>Input validation, output filtering, user harm mitigation, and application security patterns for AI services.</p>
         </div>
         <div className="feature-box">
-          <span className="feature-icon">🚀</span>
-          <h3>Scalable & Secure</h3>
-          <p>Building robust applications with scalability in mind.</p>
+          <span className="feature-icon">🧠</span>
+          <h3>Generative AI &amp; NLP</h3>
+          <p>Agentic AI products, RAG retrieval, prompt engineering, structured outputs, and evaluation harnesses.</p>
         </div>
       </div>
     </section>

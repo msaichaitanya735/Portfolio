@@ -35,6 +35,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
 }
 
 .experience-item.reverse {
@@ -86,14 +88,20 @@
     width: 400px;
     height: 400px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 .experience-imgHolder{
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    top: 20%;
-    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .cs{
@@ -102,13 +110,16 @@
 }
 
 .experience-imgHolder img {
-    width: 400px;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-    
 }
 
-.experience-img img:hover {
+.experience-imgHolder img:hover {
     transform: scale(1.05);
 }
 
@@ -117,29 +128,59 @@
     .experience-title h1 {
         font-size: 3rem;
     }
-    
+
     .experience-title h1 span {
         font-size: 3rem;
-
-    } 
-    .experience-item {
-        flex-direction: column;
     }
 
+    .experience-item,
     .experience-item.reverse {
         flex-direction: column;
+        gap: 24px;
+        margin-bottom: 40px;
     }
 
-    .experience-text, .experience-img {
+    .experience-text {
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     .experience-text p {
         font-size: 1rem;
     }
 
+    .experience-imgCard {
+        width: 260px;
+        height: 260px;
+        max-width: 80vw;
+        max-height: 80vw;
+    }
+
     .exp-btn {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experience-container {
+        padding: 8vw 6vw;
+    }
+
+    .experience-title h1,
+    .experience-title h1 span {
+        font-size: 2.2rem;
+    }
+
+    .experience-title p {
+        font-size: 1rem;
+    }
+
+    .experience-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .experience-imgCard {
+        width: 200px;
+        height: 200px;
     }
 }

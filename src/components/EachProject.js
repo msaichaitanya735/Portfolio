@@ -14,6 +14,11 @@ const techIconUrls = {
     'Regex': 'https://upload.wikimedia.org/wikipedia/commons/d/da/Pictogram_voting_regex.svg', // Placeholder, specific Regex logo is uncommon
     'LaTeX': 'https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg',
     'Overleaf': 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Overleaf_Logo.svg',
+    'Python': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg',
+    'FastAPI': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg',
+    'TypeScript': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
+    'LangChain': 'https://raw.githubusercontent.com/langchain-ai/.github/main/profile/logo-dark.svg',
+    'D3.js': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg',
     'github': '/images/icons/github.svg', // Keep local icons as fallback
     'react': '/images/icons/react.svg',
     'nodejs': '/images/icons/nodejs.svg',

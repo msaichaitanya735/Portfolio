@@ -26,10 +26,10 @@ function HomePage() {
         <div className="homepage-container-left">
           <div className="text-container">SAICHAITANYA MUTHYALA</div>
           <p className="paragraph-container">
-            Software Engineer with 5+ years of full-stack experience building web applications with React/TypeScript and Python. Proficient in API design, data visualization, LLM application development, and MCP/agentic frameworks.
+            Software Engineer, AI/ML with 5+ years developing production systems and 2+ years in ML infrastructure — model deployment, evaluation, optimization, and data processing. Experience with Generative AI tools, AI content safety, and application security across cybersecurity and regulated financial environments.
           </p>
           <p className="paragraph-container paragraph-recently">
-            Recently: shipped a production-level AI application from 0 to 1 in 2 days. Currently building end-to-end AI-powered web applications at HapTag AI.
+            Previously built ML infrastructure and GenAI integration at Capital One serving 500+ authorized servicing associates. Currently shipping production AI systems at HapTag AI: agentic workflows processing 1K+ events/day at 94% validity.
           </p>
           <div className="hero-open-badge-wrap">
             <span
