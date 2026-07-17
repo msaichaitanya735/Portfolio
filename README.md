@@ -1,75 +1,150 @@
 # SaiChaitanya Muthyala — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Personal portfolio for **Sai Chaitanya Muthyala** — Software Engineer, AI/ML — ML infrastructure, Generative AI, and content safety across cybersecurity and regulated financial environments.
 
-## Portfolio setup
+Live site: **[saichaitanyamuthyala.com](https://saichaitanyamuthyala.com)**
 
-- **Contact form:** Create a form at [Formspree](https://formspree.io), copy your form endpoint (e.g. `https://formspree.io/f/xxxxxxxx`), and set `REACT_APP_FORMSPREE_URL` in a `.env` file (see `.env.example`). Without this, the form shows a message asking visitors to email you directly.
-- **Resume:** Place your PDF resume in the `public` folder as `resume.pdf`. The "Resume" button and nav link will then download it as `SaiChaitanya_Resume.pdf`.
+---
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+I'm a Software Engineer with 5+ years developing production systems and 2+ years in ML infrastructure — model deployment, evaluation, optimization, and data processing. I currently build agentic AI systems at **HapTag AI** (cybersecurity). Previously at **Capital One**, where I built ML infrastructure and Generative AI integration on an internal customer-servicing platform serving 500+ authorized servicing associates in a regulated financial environment.
 
-### `yarn start`
+- 🎓 **MS in Computer Science (NLP & Machine Learning)** — University of Central Missouri
+- 🏆 **IEEE Xtreme 2021** — All India Rank 15 &nbsp;•&nbsp; **IEEE Xtreme 2020** — Rank 16
+- 🥇 **Smart India Hackathon 2019** — Winner (50K+ teams)
+- 📍 United States &nbsp;•&nbsp; ✉️ saichaitanyamuthyalas@gmail.com
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## What this repo is
 
-### `yarn test`
+The source for my personal portfolio — a single-page React app that surfaces my work experience, projects, skills, and contact channels. It's the code behind the site linked above.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Sections
 
-### `yarn build`
+- **Hero** — headline + summary + resume download
+- **About Me** — positioning around ML infrastructure, content safety, and Generative AI
+- **Education & Achievements** — degrees, IEEE Xtreme, Smart India Hackathon
+- **Professional Experience** — HapTag AI → Capital One → Cognizant (Client: Pearson) → coding.Studio
+- **Tech Stack** — grouped by ML Infrastructure / GenAI, Backend, Frontend, Infrastructure
+- **Projects** — JobFlow (agentic AI), LifeOS (AI platform), AI-RA (resume automation), and older full-stack builds
+- **Contact** — Formspree-backed contact form + social links
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Frontend**
+- React 17, React Router v6
+- Material UI (MUI 6) + custom CSS
+- `react-tsparticles` for animated backgrounds
+- `3d-react-carousal` for the project detail carousel
+- GSAP for interactions
 
-### `yarn eject`
+**Tooling**
+- Create React App (`react-scripts` 5)
+- Yarn for package management
+- Formspree for the contact form (no backend server needed)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Prerequisites
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Node.js 16+
+- Yarn (or npm)
 
-## Learn More
+### Install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone https://github.com/msaichaitanya735/Portfolio.git
+cd Portfolio
+yarn install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Configure
 
-### Code Splitting
+Create a `.env` file at the project root (see `.env.example`):
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```env
+REACT_APP_FORMSPREE_URL=https://formspree.io/f/xxxxxxxx
+```
 
-### Analyzing the Bundle Size
+Without this, the contact form falls back to a message asking visitors to email directly.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Drop your resume PDF at `public/resume.pdf`. The **Resume** button downloads it as `SaiChaitanya_Resume.pdf`.
 
-### Making a Progressive Web App
+### Run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+yarn start          # dev server on http://localhost:3000
+yarn build          # production build → build/
+yarn test           # interactive test runner
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Project Structure
 
-### Deployment
+```
+src/
+├── components/
+│   ├── HomePage.js          # top-level layout — assembles every section
+│   ├── AboutMe.js           # ML infra / content safety / GenAI positioning
+│   ├── Education.js         # degrees + IEEE Xtreme / SIH achievements
+│   ├── WorkExperince.js     # HapTag → Capital One → Cognizant → coding.Studio
+│   ├── Skills.js            # tech stack grid (grouped)
+│   ├── skillslist.js        # source of truth for tech icons & groupings
+│   ├── ProjectsPage.js      # project cards
+│   ├── Projectlist.js       # source of truth for projects (title, desc, tech, screenshots)
+│   ├── EachProject.js       # project detail view with carousel + tech icons
+│   ├── Contact.js           # Formspree-backed contact form
+│   └── ...
+├── images/
+│   ├── me/                  # personal photos, company logos
+│   ├── project/             # project screenshots (grouped per project)
+│   └── icons/               # local tech icons (SVG/PNG)
+public/
+├── resume.pdf               # downloadable resume (add your own)
+└── images/icons/            # fallback icons served statically
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Where to edit what
 
-### `yarn build` fails to minify
+| Change | File |
+|---|---|
+| Add / edit a job | `src/components/WorkExperince.js` |
+| Add a project | `src/components/Projectlist.js` (+ screenshots under `src/images/project/<slug>/`) |
+| Add / rename a skill | `src/components/skillslist.js` |
+| Update the hero / summary | `src/components/HomePage.js`, `AboutMe.js`, `About.js` |
+| Update education / achievements | `src/components/Education.js` |
+| Contact endpoint | `.env` (`REACT_APP_FORMSPREE_URL`) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Deployment
+
+Netlify-friendly out of the box — `public/_redirects` handles React Router client-side routes, `Procfile` is present for platforms that need it. Build with `yarn build`, then serve the `build/` directory (Netlify, Vercel, GitHub Pages, S3+CloudFront, etc.).
+
+---
+
+## Highlights
+
+- **Real work, real numbers.** Every experience bullet maps to a system I built — 1K+ events/day agentic pipelines at HapTag AI, 500+ associates served by GenAI + PII masking at Capital One, 50K+ events/hour distributed systems at Cognizant.
+- **ML infrastructure focus.** The Skills section is grouped around the same axes I work along day-to-day: LLM APIs and RAG, backend services, frontend, and cloud infrastructure — not a random logo cloud.
+- **Fast, responsive, minimal dependencies.** Static build, no server-side rendering, mobile-first responsive layouts across every section.
+
+---
+
+## Connect
+
+- 🌐 [saichaitanyamuthyala.com](https://saichaitanyamuthyala.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/saichaitanyamuthyala)
+- 💻 [GitHub](https://github.com/msaichaitanya735)
+- ✉️ saichaitanyamuthyalas@gmail.com
+
+---
+
+_If you're a recruiter or engineering lead reading this — I'm open to Software Engineer, AI/ML and Full-Stack AI roles. Reach out via the contact form on the live site, or email directly._
