@@ -60,12 +60,25 @@ const EachProject = () => {
   return (
     <div className="eachprojectcontainer">
       <div className="logo"><a href="/">Chay</a></div>
-      {slides.length > 0 && (
+      {slides.length > 0 ? (
         <div className="carousel">
           <Carousel slides={slides} />
         </div>
+      ) : (
+        <div className="project-hero">
+          <div className="project-hero-glow" aria-hidden="true"></div>
+          <div className="project-hero-inner">
+            <span className="project-hero-type">{data.type}</span>
+            <h1 className="project-hero-title">{data.title}</h1>
+            <div className="project-hero-chips">
+              {data.tech.slice(0, 5).map((t, i) => (
+                <span key={i} className="project-hero-chip">{t}</span>
+              ))}
+            </div>
+          </div>
+        </div>
       )}
-      <div className="proTitle">{data.title}</div>
+      {slides.length > 0 && <div className="proTitle">{data.title}</div>}
       <div className="projectdescription">
         {data.desc}
       </div>
