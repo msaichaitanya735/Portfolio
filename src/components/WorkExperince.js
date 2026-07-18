@@ -23,10 +23,10 @@ function WorkExperience() {
           <p><em>Python, FastAPI, OpenAI, Claude, Gemini, LangChain, LangGraph, pgvector, Docker, AWS, CI/CD</em></p>
           <p>
             <ul>
-              <li>Built ML infrastructure for 3 production AI systems: model deployment, evaluation, optimization, and data processing pipelines; implemented Generative AI tools processing 1K+ events/day at 94% validity with agentic AI workflows.</li>
-              <li>Implemented AI content safety and security controls: input validation, output filtering, user harm mitigation, and secure coding practices in the cybersecurity domain; applied application security patterns for web-facing AI services.</li>
-              <li>Prototyped, evaluated, and productized AI features: NLP-powered information retrieval, agentic product capabilities; collaborated with peers through design and code reviews ensuring best practices in ML development.</li>
-              <li>Triaged and debugged production AI system issues across model behavior, data pipeline, and service operations; tracked and resolved with systematic debugging and monitoring.</li>
+              <li>Founding-team engineer (5 of us). Built the guts of three production AI systems end-to-end — model deployment, eval loops, and the data pipelines that keep them fed. Shipped agentic workflows chewing through 1K+ security events a day at 94% validity.</li>
+              <li>Owned AI content safety in a cybersecurity domain — input validation, output filtering, harm mitigation. You don't get to hand-wave the edge cases here; every prompt is one bad response away from a real problem.</li>
+              <li>Prototyped a lot, killed most of it, productized what stuck. NLP-powered retrieval, agentic features, and the odd Chrome-extension experiment. Design and code reviews with peers caught the sharp corners early.</li>
+              <li>When production broke, I lived in the traces — pulled apart model behavior, pipeline, and service ops until I found the actual bug, not the plausible one.</li>
             </ul>
           </p>
         </div>
@@ -45,10 +45,10 @@ function WorkExperience() {
           <p><em>Python, FastAPI, TypeScript, Node.js, LangChain, pgvector, PostgreSQL, Azure, AWS, Docker, CI/CD</em></p>
           <p>
             <ul>
-              <li>Built ML infrastructure for a production AI application: model deployment, evaluation, and optimization with a data processing pipeline; Generative AI integration on the internal customer-servicing platform serving 500+ authorized servicing associates across operations teams.</li>
-              <li>Implemented application security patterns in a regulated financial environment: web application security, input validation, access controls, PII masking, and data privacy compliance for secure handling of sensitive financial data.</li>
-              <li>Designed structured reasoning traces and provenance citations to satisfy Model Risk Management explainability requirements; human-in-the-loop sign-off was the architecture, not an add-on.</li>
-              <li>Collaborated through design and code reviews across AI, platform, and data engineering boundaries; contributed to large-scale system design and distributed computing patterns (LangChain orchestration, pgvector retrieval, FastAPI services).</li>
+              <li>Built ML infrastructure for an internal customer-servicing platform used by 500+ authorized servicing associates. Model deployment, eval harnesses, and the data pipeline feeding it — the unglamorous plumbing that decides whether GenAI is actually usable inside a bank.</li>
+              <li>In regulated environments, security is architecture, not an afterthought. PII masking sat between internal data and the LLM endpoint; every design review passed through the security team before compliance even saw it.</li>
+              <li>To satisfy Model Risk Management I built structured reasoning traces and provenance citations into the pipeline — every claim the model made traced back to a document. Human-in-the-loop wasn't tacked on; it was the design.</li>
+              <li>Owned the AI workflow layer end-to-end. Design reviews happened at the seams with the platform and data-engineering teams — LangChain orchestration, pgvector retrieval, FastAPI in the middle.</li>
             </ul>
           </p>
         </div>
@@ -67,9 +67,9 @@ function WorkExperience() {
           <p><em>Python, Java, Spring Boot, TypeScript, PostgreSQL, Kafka, AWS Lambda, SQS, S3, Docker, Kubernetes</em></p>
           <p>
             <ul>
-              <li>Developed large-scale distributed systems handling information at massive scale: 12 microservices with event-driven architecture processing 50K+ events/hour at 99.7% uptime serving 200K+ users.</li>
-              <li>Built data processing and ML-ready infrastructure on AWS (Lambda, SQS, S3, Glue pipelines); optimized data structures and algorithms for performance at scale across 120+ institutions.</li>
-              <li>Contributed to React/TypeScript applications for Pearson's education platform; improved responsiveness through state optimization, lazy-loaded routes, and reduced re-renders.</li>
+              <li>Distributed systems at Pearson-scale: 12 microservices on an event-driven backbone, 50K+ events/hour, 99.7% uptime for 200K+ students who had exams to take. Downtime here isn't a metric — it's someone's grade.</li>
+              <li>Built the AWS data plumbing (Lambda, SQS, S3, Glue) that fed analytics across 120+ institutions. When traffic jumped 12x during peak season, nothing dropped.</li>
+              <li>Also lived in the React/TypeScript layer — state cleanup, lazy routes, killing off re-renders on pages that kept getting slower with every feature added.</li>
             </ul>
           </p>
         </div>
@@ -88,8 +88,8 @@ function WorkExperience() {
           <p><em>Python, Java, TypeScript, PostgreSQL, Docker, CI/CD</em></p>
           <p>
             <ul>
-              <li>Developed production software with Python and Java: REST APIs, data structures, algorithms, and secure coding practices.</li>
-              <li>Collaborated through code reviews and design discussions: ensured best practices in style, testability, and efficiency while shipping iteratively in a small team.</li>
+              <li>Full-stack in Python and Java: REST APIs, real algorithms, secure defaults. Small team, so you owned things end-to-end — no throwing it over the wall.</li>
+              <li>Shipped iteratively; code reviews were less "process" and more "please catch this before I regret it." Great place to fail early and cheaply.</li>
             </ul>
           </p>
         </div>
