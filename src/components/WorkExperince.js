@@ -19,7 +19,7 @@ function WorkExperience() {
       <div className="experience-item">
         <div className="experience-text">
           <h2>Software Engineer, AI/ML</h2>
-          <p><strong>HapTag AI</strong> (Cybersecurity Startup) – Remote, USA | Jun 2025 - April 2026</p>
+          <p><strong>HapTag AI</strong> (Cybersecurity Startup)</p>
           <p><em>Python, FastAPI, OpenAI, Claude, Gemini, LangChain, LangGraph, pgvector, Docker, AWS, CI/CD</em></p>
           <p>
             <ul>
@@ -41,7 +41,7 @@ function WorkExperience() {
       <div className="experience-item reverse">
         <div className="experience-text">
           <h2>Software Engineer</h2>
-          <p><strong>Capital One</strong> (Financial Services) – United States | Jan 2024 - Jun 2025</p>
+          <p><strong>Capital One</strong> (Financial Services)</p>
           <p><em>Python, FastAPI, TypeScript, Node.js, LangChain, pgvector, PostgreSQL, Azure, AWS, Docker, CI/CD</em></p>
           <p>
             <ul>
@@ -63,7 +63,7 @@ function WorkExperience() {
       <div className="experience-item">
         <div className="experience-text">
           <h2>Software Engineer</h2>
-          <p><strong>Cognizant Technology Solutions</strong> (Client: Pearson) – Hyderabad, India | Jan 2021 - Jun 2023</p>
+          <p><strong>Cognizant Technology Solutions</strong> (Client: Pearson)</p>
           <p><em>Python, Java, Spring Boot, TypeScript, PostgreSQL, Kafka, AWS Lambda, SQS, S3, Docker, Kubernetes</em></p>
           <p>
             <ul>
@@ -84,7 +84,7 @@ function WorkExperience() {
       <div className="experience-item reverse">
         <div className="experience-text">
           <h2>Software Development Engineer</h2>
-          <p><strong>coding.Studio();</strong> – Hyderabad, India | Jan 2020 - Jan 2021</p>
+          <p><strong>coding.Studio();</strong></p>
           <p><em>Python, Java, TypeScript, PostgreSQL, Docker, CI/CD</em></p>
           <p>
             <ul>
